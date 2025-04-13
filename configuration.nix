@@ -189,6 +189,9 @@
     enable = true;
   };
 
+	# Adds NixOS Flakes
+	nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   # Load nvidia driver for Xorg and Wayland
   services.xserver.videoDrivers = ["nvidia"];
 
