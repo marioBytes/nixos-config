@@ -112,7 +112,7 @@
       wget
       ghostty
       pkgs.zed-editor
-      pkgs.fastfetch
+			pkgs.fastfetch
     ];
   };
 
