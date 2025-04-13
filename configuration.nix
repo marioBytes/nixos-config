@@ -88,12 +88,12 @@
     shellAliases = {
       ll = "ls -l";
       update = "sudo nixos-rebuild switch";
-      conf = "sudo vim /etc/nixos/configuration.nix";
+			config = "sudoedit /etc/nixos/configuration.nix";
       gconf = "vim ~/.config/ghostty/config";
       z = "zeditor";
     };
 
-    oh-my-zsh = {
+    ohMyZsh = {
       enable = true;
       plugins = ["git"];
       theme = "cloud";
