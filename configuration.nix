@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports =
@@ -99,6 +99,12 @@
       theme = "cloud";
     };
   };
+
+  # Stylix Config
+	stylix.enable = true;
+	stylix.polarity = "dark";
+	stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+	stylix.autoEnable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mariom = {
