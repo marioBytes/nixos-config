@@ -90,6 +90,7 @@
       update = "sudo nixos-rebuild switch";
 			config = "sudoedit /etc/nixos/configuration.nix";
       gconf = "vim ~/.config/ghostty/config";
+			reboot = "shutdown -r";
       z = "zeditor";
     };
 
